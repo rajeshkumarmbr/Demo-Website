@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Josefin Slab', serif;
+	
+}
+
+#particles-js{
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)) ,url('webimg/Taj_mahal.jpg');
+	background-size: cover;
+	background-position:center;
+}
+
+main{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	
+}
+
+header{
+	width: 100%;
+	height: 15vh;
+	background: rgba(0,0,0,0.3);
+	color: white;
+	/*background-color: pink;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 25px;
+}
+ header .logo{
+ 	width: 35%;
+ 	align-items: center;
+ 	font-weight: 100;
+ 	font-size: 12px;
+ 	text-transform: uppercase;
+ 	text-shadow: 1px 2px 1px #00b894;
+ 	/*background-color: yellow;*/
+ }
+
+ header .menu{
+ 	width: 50%;
+ 	display: flex;
+ 	justify-content: space-around;
+
+
+
+ }
+
+ .menu a{
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ 	letter-spacing:1px;
+ 	color: white;
+ 	position:relative;
+ 	padding-top:4px;
+ }
+.menu a:first-child{
+color:#00b894;
+}
+ a:hover{
+ 	color:#00b894;
+ }
+
+ .menu a:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 100%;
+ 	left: 0;
+ 	width: 0%;
+ 	height:2px;
+ 	background-color:white;
+ 	transition: all 0.5s linear;
+
+ }
+ .menu a:hover:before{
+ 	width:100%;
+ 	background-color: #EAB543;
+ }
+.menu a:after{
+	position: absolute;
+	content: "";
+	top:0;
+	right:0;
+	width:0;
+	height:2px;
+	background-color: white;
+	transition: all 0.5s linear;
+}
+
+.menu a:hover:after{
+	width: 100%;
+	background-color: #EAB543;
+}
+
+
+
+.content{
+	
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color:white;
+
+}
+h3{
+	padding-bottom: 20px;
+	font-weight: 200;
+	font-size: 35px;
+	text-shadow: 1px 2px 1px #7f8fa6;
+}
+
+section h1{
+	padding-bottom: 20px;
+	font-size: 40px;
+	font-weight: 600;
+	text-shadow: 1px 2px 1px #f5f6fa;
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 20px;
+	padding-bottom: 30px;
+	text-shadow: 1px 2px 1px #353b48;
+
+}
+section .btn_one{
+	background-color: #fff;
+	color:#000;
+
+}
+
+section a{
+	padding: 12px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .5s ease;
+
+}
+
+.btn_one:hover{
+	background: #00b894;
+	color:white;
+}
+section .btn_two{
+	background-color: #00b894;
+	color:#fff;
+
+}
+
+section a{
+	padding: 12px 30px;
+	margin-top: 20px;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn_two:hover{
+	background: #fff;
+	color:#000;
+}
+
+.city:before{
+	content: "";
+	color: #00b894;
+	animation: city_name 10s infinite linear;
+}
+
+@keyframes city_name{
+	0%{content: "Mumbai"}
+	10%{content: "Visakhapatnam"}
+	20%{content: "New Delhi"}
+	30%{content: "Patna"}
+	40%{content: "Bangalore "}
+	50%{content: "Hyderabad "}
+	60%{content: "Ahmedabad "}
+	70%{content: "Kolkata"}
+	80%{content: "Chennai"}
+	90%{content: "Surat"}
+	100%{content: "jaipur"}
+}
+
+footer{
+	width: 100%;
+	height: 10vh;
+	background:rgba(0,0,0,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 60px;
+
+}
+footer a{
+	width: 50px;
+	height: 48px;
+	margin: 10px;
+	background-color:#f5f6fa;
+	box-shadow:2px 3px 2px 2px #718093;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden; 
+
+}
+footer i{
+	transition: all 0.3s linear;
+}
+a:hover .fa{
+	transform: scale(1.4);
+	color:#f5f6fa;
+
+}
+footer a:before{
+	position: absolute;
+	content: "";
+	top:90%;
+	left:-50%;
+	width: 58px;
+	height: 58px;
+	background-color:#00b894;
+	transform: rotate(60deg);
+}
+
+footer a:hover:before{
+	animation: any_name 0.8s 1;
+	animation-fill-mode:forwards;
+}
+
+@keyframes any_name{
+	0%{top:90%;
+	left:-50%;}
+	50%{top:-60%;
+		left:-10%;
+	}
+	100%{
+		top:-10%;
+		left:-10%;
+	}
+}
+
+.fa-facebook{
+ 	color: #3b5998;
+ }
+ .fa-instagram{
+ 	color:  #3f729b;
+ }
+ .fa-twitter{
+ 	color: #00acee;
+ }
+ .fa-linkedin{
+ 	color: #0e76a8;
+ }
+ .fa-youtube{
+ 	color: #c4302b; 
+ }
+ .fa-google-plus{
+ 	color:#d34836;
+ }
+
+ 

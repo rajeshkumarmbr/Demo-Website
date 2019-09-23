@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Patrick Hand', cursive;
+
+}
+#particles-js{
+	width: 100%;
+	height:100vh;
+	background-image:url("Webimg/Xiamen_Night_Beach.jpg");
+	background-size:cover;
+	background-position: center;
+}
+
+.backimg{
+	width: 100%;
+	height:100vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	position: absolute;
+	
+
+}
+
+.profile{
+	width: 350px;
+	background: rgba(0,0,0,0.3);
+	border-radius:15px; 
+	padding-bottom: 20px;
+}
+.img img{
+	width:120px;
+	height:150px;
+	border-radius:50%;
+	padding-top:20px;
+	padding-bottom: 20px; 
+}
+.profiletext h2{
+font-weight:500;
+font-size: 35px;
+
+}
+.profiletext h3{
+	letter-spacing:2px;
+}
+
+
+.profiletext p{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.S_media a{
+	color: white;
+	transition: all 0.9s ease;
+
+}
+a.fb:hover {
+	color:#3b5998;
+}
+.S_media a#istg:hover{
+	color:#FCAF45;
+}
+.S_media a#lnki:hover{
+	color:#0077B5;
+}
+.S_media a#gp:hover{
+	color:#DD4B39;
+}
+#particles-js{
+	width: 100%
+	height:100vh;
+
+}
+
+
+
