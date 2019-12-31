@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}	
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main{
+	width: 80%;
+	height: 100vh;
+	background-color: rgba(0,100, 100, 0.3);
+
+}
+header{
+	width: 80%;
+	height: 10vh;
+	background-color: rgba(0, 0, 0, 0.5); 
+	position: absolute;
+}
+header nav{
+	height: 20px;
+	background-color: brown;
+	margin-top: 5px;: 
+}
+header li{
+	list-style-type: none;
+	display: block;
+	float: left;
+	width: 12.4%;
+	align-items: center;
+	border-right: 1px solid white;
+	text-align: center;
+}
+header li:last-child{
+	border-right: none;
+}
+header li a {
+	text-decoration: none;
+	color: white;
+	text-transform: capitalize;
+}
+
+.arrow{
+	position: absolute;
+	top:35%;
+
+}
+.prev{
+	padding: 6px 6px;
+	border-radius: 0 5px 5px 0;
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.arrow1{
+	position: absolute;
+	top: 35%;
+	right:10vw;
+}
+.next{
+	padding: 6px 6px;
+	border-radius: 5px 0 0 5px;
+	text-decoration: none;
+	font-weight: bolder;
+	color: white;
+	font-size: 25px;
+} 
+.prev:hover,.next:hover{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider{
+	margin-top: 10vh;
+	width: 80%;
+	height: 400px;
+	position: absolute;
+	background-image: url('https://i0.wp.com/scrubbing.in/wp-content/uploads/2018/08/pexels-photo-1172207.jpeg?resize=1400%2C931&ssl=1');
+	background-size: 100% 100%;
+	animation: slider 9s infinite ease;	
+}
+@keyframes slider{
+	0%{background-image: url('Webimg/image1.jpg');}
+	25%{background-image: url('Webimg/forest.jpg');}
+	50%{background-image: url('Webimg/fieldoflights.jpg');}
+	75%{background-image:url('Webimg/Taj_mahal.jpg');}
+	100%{background-image: url('Webimg/gold_temple.jpg');}
+			
+}
+.dot{
+	position: absolute;
+	top: 65%;
+	left: 45%;
+}
+
+.dots{
+	padding:2px 6px;
+	background-color: white;
+	margin: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.dots:hover{
+	background-color: brown;
+}
